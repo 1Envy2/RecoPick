@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp">
+
+    <!-- Logo and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp">
+
+    </LinearLayout>
+
+    <!-- Card Container -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@drawable/card_gradient_background">
+
+            <ImageView
+                android:layout_width="252dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lalezar_regular"
+                android:text="Registration"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:alpha="0.8"
+                android:text="Enter your credential for register"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+                android:textSize="11sp" />
+
+            <!-- First Name Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_acc" />
+
+                <EditText
+                    android:id="@+id/firstNameEditText"
+                    android:layout_width="252dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="First Name"
+                    android:textSize="11sp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+                    android:textColorHint="#80000000" />
+
+            </LinearLayout>
+
+            <!-- Last Name Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_acc" />
+
+
+                <EditText
+                    android:id="@+id/lastNameEditText"
+                    android:layout_width="252dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Last Name"
+                    android:textSize="11sp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+                    android:textColorHint="#80000000" />
+
+            </LinearLayout>
+
+            <!-- Email Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="14dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="252dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Email"
+                    android:textSize="11sp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+                    android:textColorHint="#80000000" />
+
+            </LinearLayout>
+
+            <!-- Password Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_password" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_marginLeft="5sp"
+                    android:layout_width="224dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+                    android:textColorHint="#80000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#000457"
+                android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+                android:text="Sign Up"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:cornerRadius="20sp"/>
+
+            <!-- Login Link -->
+            <TextView
+                android:id="@+id/loginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do have an account yet? login"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:cornerRadius="20dp" />
+
+
+
+</LinearLayout>
