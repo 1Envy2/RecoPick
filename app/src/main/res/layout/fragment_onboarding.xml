@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecoPick"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/lalezar_regular"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="4dp" />
+
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rekomendasi Barang Elektronik"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:lineSpacingExtra="2dp" />
+
+</LinearLayout>

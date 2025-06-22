@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.insight.InsightFragment">
+
+    <!-- Logo RecoPick di kiri atas -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/logo"
+        android:contentDescription="Logo RecoPick"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_gravity="top|start" />
+
+    <!-- Konten Insight -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Card Insight 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardInsightHandphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                card_view:cardCornerRadius="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/rounded_top_corners">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/insight_hp"
+                            android:clipToOutline="true"
+                            android:background="@drawable/button_white_rounded"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tips Memilih Handphone Sesuai Kebutuhan"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak semua smartphone cocok untuk semua orang. Berikut tips singkatnya:\n• Untuk multitasking: Pilih RAM minimal 8 GB dan prosesor terbaru.\n• Untuk fotografi: Cari kamera dengan sensor besar ...."
+                            android:textSize="11sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card Insight 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                card_view:cardCornerRadius="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/rounded_top_corners">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/insight_laptop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/button_white_rounded"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Panduan Memilih Laptop untuk Mahasiswa"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Laptop ideal untuk mahasiswa sebaiknya memiliki RAM minimal 8GB, menggunakan SSD agar kinerja lebih cepat, dan layar berukuran sekitar 14 inci yang pas untuk dibawa ke kampus dan nyaman digunakan untuk belajar."
+                            android:textSize="11sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card Insight 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                card_view:cardCornerRadius="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/rounded_top_corners">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/insight_smarttv"
+                            android:clipToOutline="true"
+                            android:background="@drawable/button_white_rounded"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tips Membeli Smart TV untuk Rumah Anda"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Agar mendapatkan pengalaman menonton terbaik, pilih Smart TV dengan resolusi minimal Full HD atau 4K, fitur koneksi ke aplikasi seperti Netflix dan YouTube, serta ukuran layar yang sesuai dengan ukuran ruangan di rumah."
+                            android:textSize="11sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card Insight 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                card_view:cardCornerRadius="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/rounded_top_corners">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/insight_kamera"
+                            android:clipToOutline="true"
+                            android:background="@drawable/button_white_rounded"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tips Membeli Kamera Yang Cocok Untuk Anda"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kamera Terbaik untuk Pemula di Fotografi
+Bagi pemula di dunia fotografi, kamera mirrorless adalah pilihan yang praktis dengan kualitas tinggi karena dilengkapi fitur autofocus cepat, stabilisasi gambar, dan lensa kit yang sudah cukup untuk mempelajari berbagai teknik pengambilan gambar."
+                            android:textSize="11sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
