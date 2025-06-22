@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.utstam.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.utstam.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.utstam.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_handphone"
+        android:name="com.example.utstam.ui.handphone.HandphoneFragment"
+        android:label="Handphone"
+        tools:layout="@layout/fragment_handphone" />
+
+    <fragment
+        android:id="@+id/navigation_laptop"
+        android:name="com.example.utstam.ui.laptop.LaptopFragment"
+        android:label="Laptop"
+        tools:layout="@layout/fragment_laptop" />
+
+    <fragment
+        android:id="@+id/navigation_tv"
+        android:name="com.example.utstam.ui.tv.TvFragment"
+        android:label="TV"
+        tools:layout="@layout/fragment_tv" />
+
+    <fragment
+        android:id="@+id/navigation_tablet"
+        android:name="com.example.utstam.ui.tablet.TabletFragment"
+        android:label="Tablet"
+        tools:layout="@layout/fragment_tablet" />
+
+    <fragment
+        android:id="@+id/navigation_kamera"
+        android:name="com.example.utstam.ui.kamera.KameraFragment"
+        android:label="Kamera"
+        tools:layout="@layout/fragment_kamera" />
+
+    <fragment
+        android:id="@+id/navigation_Perangkat_audio"
+        android:name="com.example.utstam.ui.perangkat_audio.Perangkat_AudioFragment"
+        android:label="Perangkat_audio"
+        tools:layout="@layout/fragment_perangkat_audio" />
+
+
+</navigation>
