@@ -12,11 +12,8 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         val decorView = window.decorView
-        // Hide the status bar.
-//        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        // Hide ActionBar
         if (supportActionBar != null) {
             supportActionBar!!.hide()
         }
@@ -25,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@SplashScreenActivity,
-                    MainActivity::class.java
+                    OnboardingActivity::class.java  // Changed from MainActivity to OnboardingActivity
                 )
             )
             finish()
