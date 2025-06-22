@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -24,3 +25,31 @@
         android:layout_marginTop="4dp"
         android:gravity="center_horizontal"/>
 </LinearLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgProduk"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hp_iphone13" />
+
+    <TextView
+        android:id="@+id/txtNamaProduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"/>
+</LinearLayout>
+>>>>>>> 392c53d3cce54873d4fe3ec93820967f2d7bfb06

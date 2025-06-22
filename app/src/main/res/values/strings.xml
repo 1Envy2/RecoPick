@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name">UTSTAM</string>
+<<<<<<< HEAD
     <string name="title_dashboard">Home</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
     <string name="title_insight">Insight</string>
     <string name="title_detailinsight">Detail Insight</string>
     <string name="title_profile">profile</string>
+=======
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+>>>>>>> 392c53d3cce54873d4fe3ec93820967f2d7bfb06
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

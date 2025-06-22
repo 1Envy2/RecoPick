@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Active/Selected state - White circle -->
@@ -23,4 +24,31 @@
             <size android:width="8dp" android:height="8dp" />
         </shape>
     </item>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Active/Selected state - White circle -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+            <size android:width="10dp" android:height="10dp" />
+        </shape>
+    </item>
+
+    <!-- Inactive/Unselected state - Dark blue circle -->
+    <item android:state_selected="false">
+        <shape android:shape="oval">
+            <solid android:color="#4A47A3" />
+            <size android:width="8dp" android:height="8dp" />
+        </shape>
+    </item>
+
+    <!-- Default state - Dark blue circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4A47A3" />
+            <size android:width="8dp" android:height="8dp" />
+        </shape>
+    </item>
+>>>>>>> 392c53d3cce54873d4fe3ec93820967f2d7bfb06
 </selector>

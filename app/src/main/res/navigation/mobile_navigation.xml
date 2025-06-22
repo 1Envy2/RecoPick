@@ -5,7 +5,6 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_dashboard">
 
-
     <fragment
         android:id="@+id/navigation_insight"
         android:name="com.example.utstam.ui.insight.InsightFragment"
@@ -17,13 +16,11 @@
             app:destination="@id/detailInsightFragment" />
     </fragment>
 
-
     <fragment
         android:id="@+id/detailInsightFragment"
         android:name="com.example.utstam.ui.insight.DetailInsightFragment"
         android:label="@string/title_detailinsight"
         tools:layout="@layout/fragment_detail_insight" />
-
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -71,6 +68,5 @@
         android:name="com.example.utstam.ui.perangkat_audio.Perangkat_AudioFragment"
         android:label="Perangkat_audio"
         tools:layout="@layout/fragment_perangkat_audio" />
-
 
 </navigation>

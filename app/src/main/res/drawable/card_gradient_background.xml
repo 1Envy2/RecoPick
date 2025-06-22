@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
@@ -7,4 +8,15 @@
         android:angle="270"
         android:type="linear" />
     <corners android:radius="20dp" />
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#9597BA"
+        android:endColor="#373C94"
+        android:angle="270"
+        android:type="linear" />
+    <corners android:radius="20dp" />
+>>>>>>> 392c53d3cce54873d4fe3ec93820967f2d7bfb06
 </shape>
