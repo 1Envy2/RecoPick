@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Header Edit Profile dan tombol back -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="#000046"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back"/>
+    </RelativeLayout>
+
+    <!-- Nama -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textStyle="bold"
+        android:textColor="#000046"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_grey"
+        android:padding="12dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+        android:textColorHint="#80000457"
+        android:hint="Aurora Celestina"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="#000046"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_grey"
+        android:padding="12dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#80000457"
+        android:hint="CalsAurora@gmail.com"/>
+
+    <!-- Username -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textColor="#000046"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_grey"
+        android:padding="12dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/martianmono_variablefont_wdth_wght"
+        android:textColorHint="#80000457"
+        android:hint="Calestina"/>
+
+    <!-- Tombol Save -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Save"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1DB954"
+        app:cornerRadius="50dp"
+        android:layout_gravity="end"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+
+</LinearLayout>
