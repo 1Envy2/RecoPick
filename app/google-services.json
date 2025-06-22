@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505435760542",
+    "project_id": "utstam011",
+    "storage_bucket": "utstam011.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505435760542:android:06ea2c1de602db0760188f",
+        "android_client_info": {
+          "package_name": "com.example.utstam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm_7nVrDk0ik3T20nQuh7OjSB678yiLXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+
+    <fragment
+        android:id="@+id/navigation_insight"
+        android:name="com.example.utstam.ui.insight.InsightFragment"
+        android:label="@string/title_insight"
+        tools:layout="@layout/fragment_insight">
+
+        <action
+            android:id="@+id/action_insightFragment_to_detailInsightFragment"
+            app:destination="@id/detailInsightFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailInsightFragment"
+        android:name="com.example.utstam.ui.insight.DetailInsightFragment"
+        android:label="@string/title_detailinsight"
+        tools:layout="@layout/fragment_detail_insight" />
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.utstam.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.utstam.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_handphone"
+        android:name="com.example.utstam.ui.handphone.HandphoneFragment"
+        android:label="Handphone"
+        tools:layout="@layout/fragment_handphone" />
+
+    <fragment
+        android:id="@+id/navigation_laptop"
+        android:name="com.example.utstam.ui.laptop.LaptopFragment"
+        android:label="Laptop"
+        tools:layout="@layout/fragment_laptop" />
+
+    <fragment
+        android:id="@+id/navigation_tv"
+        android:name="com.example.utstam.ui.tv.TvFragment"
+        android:label="TV"
+        tools:layout="@layout/fragment_tv" />
+
+    <fragment
+        android:id="@+id/navigation_tablet"
+        android:name="com.example.utstam.ui.tablet.TabletFragment"
+        android:label="Tablet"
+        tools:layout="@layout/fragment_tablet" />
+
+    <fragment
+        android:id="@+id/navigation_kamera"
+        android:name="com.example.utstam.ui.kamera.KameraFragment"
+        android:label="Kamera"
+        tools:layout="@layout/fragment_kamera" />
+
+    <fragment
+        android:id="@+id/navigation_Perangkat_audio"
+        android:name="com.example.utstam.ui.perangkat_audio.Perangkat_AudioFragment"
+        android:label="Perangkat_audio"
+        tools:layout="@layout/fragment_perangkat_audio" />
+
+
+</navigation>
