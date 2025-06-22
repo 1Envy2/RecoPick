@@ -34,6 +34,7 @@
         tools:layout="@layout/fragment_profile" />
 
     <fragment
+<<<<<<< HEAD
         android:id="@+id/editProfileFragment"
         android:name="com.example.utstam.ui.profile.EditProfileFragment"
         android:label="Edit Profile"
@@ -41,6 +42,8 @@
 
 
     <fragment
+=======
+>>>>>>> acc7194ab210e7f8706dd898d33d0e467dff669b
         android:id="@+id/navigation_handphone"
         android:name="com.example.utstam.ui.handphone.HandphoneFragment"
         android:label="Handphone"

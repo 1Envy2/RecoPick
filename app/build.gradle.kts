@@ -50,7 +50,10 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.firebase.database)
+<<<<<<< HEAD
     implementation(libs.firebase.firestore.ktx)
+=======
+>>>>>>> acc7194ab210e7f8706dd898d33d0e467dff669b
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

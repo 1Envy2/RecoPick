@@ -122,7 +122,7 @@ class LoginActivity : AppCompatActivity() {
                 if (success) {
                     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
-                    //  Simpan data user ke SharedPreferences
+                    // Simpan data user ke SharedPreferences
                     val sharedPref = getSharedPreferences("UserPrefs", MODE_PRIVATE)
                     sharedPref.edit()
                         .putString("user_name", "${user?.firstName} ${user?.lastName}")
@@ -130,21 +130,20 @@ class LoginActivity : AppCompatActivity() {
                         .putString("user_username", user?.username ?: "")
                         .apply()
 
-                    //  Navigasi ke MainActivity
+                    // Navigasi ke MainActivity
                     try {
                         val intent = Intent(this, MainActivity::class.java)
+                        intent.putExtra("user_email", user?.email)
+                        intent.putExtra("user_name", "${user?.firstName} ${user?.lastName}")
                         startActivity(intent)
                         finish()
                     } catch (e: Exception) {
                         Log.e("LoginActivity", "Error navigating to main: ${e.message}", e)
-                        Toast.makeText(
-                            this,
-                            "Login successful but navigation failed",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(this, "Login successful but navigation failed", Toast.LENGTH_SHORT).show()
                     }
+                } else {
+                    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
                 }
-
             }
         }
     }
