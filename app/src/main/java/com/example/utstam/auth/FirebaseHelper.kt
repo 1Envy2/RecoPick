@@ -5,11 +5,8 @@ import java.security.MessageDigest
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-<<<<<<< HEAD
 import com.example.utstam.model.User
 
-=======
->>>>>>> acc7194ab210e7f8706dd898d33d0e467dff669b
 
 class FirebaseHelper {
     private val database: FirebaseDatabase
@@ -104,13 +101,9 @@ class FirebaseHelper {
                                     userId = userId,
                                     firstName = firstName,
                                     lastName = lastName,
-                                    email = email,
-<<<<<<< HEAD
-                                    password = hashedPassword,
 
-=======
                                     password = hashedPassword
->>>>>>> acc7194ab210e7f8706dd898d33d0e467dff669b
+
                                 )
 
                                 // Set timeout untuk write operation
