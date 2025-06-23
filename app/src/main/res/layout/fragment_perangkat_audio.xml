@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kategori_perangkat_audio" />
+
+        <TextView
+            android:id="@+id/txtJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perangkat Audio"
+            android:textColor="#00107C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="16dp" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+    </RelativeLayout>
+
+    <!-- Filter Section -->
+    <HorizontalScrollView
+        android:id="@+id/filterScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Filter Icon -->
+            <ImageView
+                android:id="@+id/btnFilterIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_filter_alt_24"
+                android:background="@drawable/filter_icon_background"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Brand Filter Buttons -->
+            <Button
+                android:id="@+id/btnFilterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#1A237E"
+                android:text="Semua"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnFilterJBL"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="JBL"
+                android:backgroundTint="#E8E8E8"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnFilterLogitech"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Logitech"
+                android:backgroundTint="#E8E8E8"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnFilterSony"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sony"
+                android:backgroundTint="#E8E8E8"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnFilterSennheiser"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sennheiser"
+                android:backgroundTint="#E8E8E8"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Spacer untuk bottom navigation -->
+    <View
+        android:id="@+id/bottomSpacer"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Grid List Produk -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPerangkat_Audio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/filterScrollView"
+        app:layout_constraintBottom_toTopOf="@id/bottomSpacer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Filter Dropdown Overlay -->
+    <LinearLayout
+        android:id="@+id/filterOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- Filter Panel -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="280dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+
+                <!-- Filter Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/baseline_filter_alt_24"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Filter &amp; Sort"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000" />
+
+                    <!-- Close Button -->
+                    <ImageView
+                        android:id="@+id/btnCloseFilter"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/baseline_close_24"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <!-- Sort Section -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urutkan Berdasarkan:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/sortDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Default"
+                    android:textSize="14sp"
+                    android:textColor="#1A237E"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/sortPriceLowHigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Harga: Rendah ke Tinggi"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/sortPriceHighLow"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Harga: Tinggi ke Rendah"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/sortRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Rating Tertinggi"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="12dp" />
+
+                <!-- Price Filter Section -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filter Berdasarkan Harga:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/priceRange1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="200RB - 500RB"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/priceRange2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="500RB - 1JT"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/priceRange3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="1JT - 3JT"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/priceRange4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="3JT - 7JT"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/priceRangeAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Semua Harga"
+                    android:textSize="14sp"
+                    android:textColor="#1A237E"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Transparent area to close filter -->
+        <View
+            android:id="@+id/filterOverlayBackground"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

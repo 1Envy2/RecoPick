@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".ui.detail.DetailProdukFragment">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Produk"
+            android:textColor="#1A237E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Single Product Image -->
+            <ImageView
+                android:id="@+id/imgProdukUtama"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="24dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/button_white_rounded"
+                android:clipToOutline="true"
+                tools:src="@drawable/hp_samsung" />
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/txtNamaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Samsung Galaxy Z Flip"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Spesifikasi Teknis -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 Spesifikasi Teknis:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtSpesifikasiTeknis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Layar Utama: 6.7 inci Dynamic AMOLED, Full HD+\n• Layar Sekunder: 1.9 inci Super AMOLED\n• Prosesor: Snapdragon 8 Gen 2\n• RAM: 8 GB\n• Memori Internal: 256 GB / 512 GB\n• Kamera Belakang: 12 MP (wide) + 12 MP (ultrawide)\n• Kamera Depan: 10 MP\n• Baterai: 3.700 mAh, Fast Charging 25W\n• Sistem Operasi: Android 13, One UI"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp" />
+
+            <!-- Harga -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💰 Harga (Perkiraan):"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp 15.999.000 - Rp 17.999.000 (tergantung varian dan promo yang tersedia)"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp" />
+
+            <!-- Alasan Penggunaan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📱 Alasan Penggunaan:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtAlasanPenggunaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mayoritas pengguna menyukai desain ringkas, performa lancar, dan fitur kamera fleksibel. Namun, daya tahan lipatan jangka panjang dan kapasitas baterai jadi diskusi."
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp" />
+
+            <!-- Kelebihan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ Kelebihan:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtKelebihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Desain unik &amp; ringkas\n• Layar lipat berkualitas tinggi\n• Performa flagship\n• Pengalaman multitasking inovatif"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="8dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
