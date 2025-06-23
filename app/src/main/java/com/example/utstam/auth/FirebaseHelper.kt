@@ -101,9 +101,15 @@ class FirebaseHelper {
                                     userId = userId,
                                     firstName = firstName,
                                     lastName = lastName,
+<<<<<<< HEAD
                                     email = email,
                                     password = hashedPassword,
 
+=======
+
+                                    password = hashedPassword
+
+>>>>>>> a291bcc5af5056405177259fc90bdb4752fb62ce
                                 )
 
                                 // Set timeout untuk write operation
